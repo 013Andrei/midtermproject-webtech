@@ -150,6 +150,7 @@
         return;
     }
 
+    // Contact Script
     form.addEventListener("submit", function (event) {
         event.preventDefault(); // Prevent default form submission
 
@@ -190,5 +191,45 @@
         }
     });
   });
+  
+  // Register Script
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("registration-form");
+  
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevents real form submission
+  
+      // Simple validation
+      let isValid = true;
+      const inputs = form.querySelectorAll("input, textarea");
+  
+      inputs.forEach(input => {
+        if (input.value.trim() === "") {
+          isValid = false;
+          input.style.borderColor = "red"; // Highlight empty fields
+        } else {
+          input.style.borderColor = ""; // Reset border color if filled
+        }
+      });
+  
+      if (!isValid) {
+        alert("Please fill in all fields!");
+        return;
+      }
+  
+      // Show confirmation message
+      const confirmationMessage = document.getElementById("confirmation-message");
+      confirmationMessage.style.display = "block";
+  
+      // Clear form fields
+      form.reset();
+  
+      // Hide confirmation message after 5 seconds
+      setTimeout(() => {
+        confirmationMessage.style.display = "none";
+      }, 5000);
+    });
+  });
+  
 
 })();
