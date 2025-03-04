@@ -231,5 +231,32 @@
     });
   });
   
+  function updateCountdown() {
+    const eventDate = new Date("August 30, 2025 05:00:00").getTime();
+    const now = new Date().getTime();
+    const timeRemaining = eventDate - now;
+
+    if (timeRemaining <= 0) {
+        document.getElementById("days").textContent = "0";
+        document.getElementById("hours").textContent = "0";
+        document.getElementById("minutes").textContent = "0";
+        return;
+    }
+
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    updateCountdown(); // Run immediately
+    setInterval(updateCountdown, 60000); // Update every minute
+});
+
+
 
 })();
