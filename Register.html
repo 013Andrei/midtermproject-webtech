@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Pricing - Logis Bootstrap Template</title>
+  <title>Logis</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -37,7 +37,7 @@
   ======================================================== -->
 </head>
 
-<body class="pricing-page">
+<body class="get-a-quote-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -51,12 +51,11 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="About.html">About</a></li>
           <li><a href="Details.html">Details</a></li>
-          <li><a href="Merchandise.html" class="active">Merchandise</a></li>
+          <li><a href="Merchandise.html">Merchandise</a></li>
           <li><a href="contact.html">Contact</a></li>
-        <ul>
-
+        </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -70,77 +69,48 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.jpg);">
       <div class="container position-relative">
-        <h1>Merchandise</h1>
+        <h1>Register</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Merchandise</li>
+            <li class="current">Register</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Pricing Section -->
-    <section id="Merchandise" class="Merchandise section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <span>Merchandise</span>
-        <h2>Merchandise</h2>
-        <p><strong>Get Your EcoSteps Gear!</strong></p>
-        <br>
-        <p>Explore our exclusive eco-friendly merchandise designed to support sustainability and commemorate your EcoSteps journey. Every purchase helps fund environmental initiatives, making each step count for a greener future!</p>
-        <br>
-        <p><strong>Get your EcoSteps merchandise at the event!</strong></p>
-      </div><!-- End Section Title -->
-
+    <!-- Get A Quote Section -->
+    <section id="register" class="register section">
       <div class="container">
-        <div class="row gy-4">
-            <!-- First Item -->
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card">   
-                  <div class="card-img">               
-                    <img src="assets/img/Merchandise/EcoSteps_Tshirt_2025.png" class="card-img-top" style="height: 50%;">
-                  </div>
-                    <div class="card-body">
-                      <h3><a href="#" class="stretched-link">EcoSteps Shirt</a></h3>
-                        <p class="card-text">₱250</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Second Item -->
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="assets/img/Merchandise/EcoSteps_Tote-Bag.png" class="card-img-top" style="height: 50%;">
-                  </div>  
-                    <div class="card-body">
-                      <h3><a href="#" class="stretched-link">Reusable Water Stations</a></h3>
-                        <p class="card-text">₱175</p>
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Third Item -->
-            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="card">
-                  <div class="card-img">
-                    <img src="assets/img/Merchandise/EcoSteps_Tumblr.png" class="card-img-top" style="height: 50%;">
-                  </div>  
-                    <div class="card-body">
-                      <h3><a href="#" class="stretched-link">Reusable Water Stations</a></h3>    
-                        <p class="card-text">₱300</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
+          <h3>Register for the 5K Fun Run</h3>
+          <p>You can also register onsite at the <strong>Gubat Municipal Hall in Gubat, Sorsogon.</strong></p>
+         
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2192.95733397871!2d124.12284761245213!3d12.917748374561052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a0eb6ee59ba07b%3A0x1f3448820ad761e7!2sGubat%20Municipal%20Hall!5e1!3m2!1sen!2sph!4v1740898399789!5m2!1sen!2sph"  frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div><!-- End Google Maps --><br>
 
-    </section><!-- /Pricing Section -->
+          <form id="registration-form">
+              <div class="form-group"  class="php-email-form">
+                <p>Fill out the form below to join the event.</p>
 
-    <!-- Alt Pricing Section -->
+                  <input type="text" id="name" name="name" class="form-control" placeholder="Full Name" required>
+              </div><br>
+              <div class="form-group">
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+              </div><br>
+              <div class="form-group">
+                  <input type="text" id="phone" name="phone" class="form-control" placeholder="Phone Number" required>
+              </div><br>
+              <div class="form-group">
+                  <textarea id="message" name="message" class="form-control" rows="4" placeholder="Why do you want to join?"></textarea>
+              </div><br>
+              <div class="form-group text-center">
+                  <button type="submit" class="btn">Register Now</button>
+              </div><br>
+              <p id="confirmation-message" class="confirmation-message" class="hidden"><strong>Your registration has been submitted successfully!</strong></p>
+          </form>
+      </div>
+  </section>
 
   </main>
 
@@ -194,6 +164,7 @@
     </div>
 
   </footer>
+
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
