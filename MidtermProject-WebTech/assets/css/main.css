@@ -1070,7 +1070,7 @@ section,
   color: #0adf9c;
 }
 
-.details-container i {
+.card i {
   flex-shrink: 0;
   font-size: 40px;
   color: var(--accent-color);
@@ -1078,14 +1078,14 @@ section,
   line-height: 0;
 }
 
-.details-container h3 a {
+.card h3 a {
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 5px;
-  text-align: left;
+  text-align: left; 
 }
 
-.details-container p {
+.card p {
   font-size: 15px;
   font-weight: 700;
   margin: 0; 
@@ -1104,7 +1104,7 @@ section,
   top: calc(50% - 47px);
 }
 
-.details-container {
+.card {
   display: flex;
   justify-content: space-around; 
   align-items: center;
