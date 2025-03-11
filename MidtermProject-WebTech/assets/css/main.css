@@ -1110,6 +1110,8 @@ section,
   align-items: center;
   text-align: center;
   flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .detail-card {
