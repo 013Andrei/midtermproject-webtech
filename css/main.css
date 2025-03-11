@@ -593,6 +593,14 @@ h6 {
   padding-bottom: 12px;
 }
 
+.footer h3 {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  position: relative !important;
+  padding-bottom: 12px !important;
+  color: #ffffff !important;
+}
+
 .footer .footer-links {
   margin-bottom: 30px;
 }
@@ -1261,6 +1269,11 @@ section,
 .sponsors .features-item h3 {
   font-weight: 700;
   font-size: 26px;
+}
+
+.sponsors .features-item h4 {
+  font-weight: 700;
+  font-size: 20px;
 }
 
 .sponsors .features-item p:last-child {
